@@ -1,5 +1,5 @@
 <?php 
-$pragraph = 'Sei proprio un/una ';
+$pragraph = $_GET['paragraph'];
 $bad_word = $_GET['bad_word'];
 $censured = '***';
 $str = $pragraph . $bad_word;

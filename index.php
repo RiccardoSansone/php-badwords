@@ -11,6 +11,7 @@
 <body>
     
 <form action="script.php" method="GET">
+    <input type="text" name="paragraph" placeholder="Type your paragraph">
     <input type="text" name="bad_word" placeholder="Type your badword">
     <button type="submit">Send</button>
 </form>
