@@ -1,5 +1,5 @@
 <?php 
-$pragraph = 'Sei proprio un ';
+$pragraph = 'Sei proprio un/una ';
 $bad_word = $_GET['bad_word'];
 $censured = '***';
 $str = $pragraph . $bad_word;
@@ -16,7 +16,7 @@ $str = $pragraph . $bad_word;
 
 <?php echo $str .' ' .strlen($str)?> <br>
 
-<?php echo $str = preg_replace('/Sei/', $censured, $str)?>
+<?php echo $str = str_replace( $bad_word, $censured, $str) .' ' .strlen($str)?>
 
 </body>
 </html>
